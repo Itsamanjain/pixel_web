@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixWeb</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="javascript" href="script.js">
+
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>PixWeb</h1>
+    </center>
+    <center>
+      <p>"Creates Websites on Your Demand"</p>
+    </center>
+
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <section id="services">
+    <div class="container">
+      <center>
+        <h2>Our Services</h2>
+      </center>
+      <div class="service">
+
+        <h3>Web Design</h3>
+        <p>We create beautiful and functional websites that meet your business needs.</p>
+      </div>
+      <div class="service">
+
+        <h3>Web Development</h3>
+        <p>We build custom websites using the latest web technologies and standards.</p>
+      </div>
+      <div class="service">
+
+        <h3>SEO</h3>
+        <p>We help you improve your website's search engine rankings and visibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+
+      <p>PixWeb is a web design and development agency that specializes in creating custom websites on client
+        demand. We have a team of experienced designers and developers who can bring your website vision to life.
+        Contact us today to learn more.</p>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-card">
+          <img src="customer1.jpg" alt="Customer 1">
+          <p class="testimonial-text">"I was blown away by the quality of service and attention to detail provided by
+            this company. Highly recommend!"</p>
+          <p class="testimonial-author">- John Doe</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="customer2.jpg" alt="Customer 2">
+          <p class="testimonial-text">"The team at this company really knows their stuff. They were able to help me with
+            a tricky problem and went above and beyond to make sure I was satisfied."</p>
+          <p class="testimonial-author">- Jane Smith</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="customer3.jpg" alt="Customer 3">
+          <p class="testimonial-text">"I have been a loyal customer for years and can't imagine going anywhere else for
+            my needs. The service is top-notch and the prices are competitive."</p>
+          <p class="testimonial-author">- Bob Johnson</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <center>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea><br>
+          <button type="submit">Send</button><br>
+        </form>
+      </div>
+    </section>
+  </center>
+  <footer>
+    <div class="container">
+      <center>
+        <p>&copy; 2023 PixWeb. All rights reserved.</p>
+      </center>
+    </div>
+  </footer>
+
+  <script>
+    const aboutLink = document.querySelector('a[href="#about"]');
+    aboutLink.addEventListener('click', () => {
+      window.location.href = 'about.html';
+    });
+
+    const servicesLink = document.querySelector('a[href="#services"]');
+    servicesLink.addEventListener('click', () => {
+      window.location.href = 'services.html';
+    });
+
+    const contactLink = document.querySelector('a[href="#contact"]');
+    contactLink.addEventListener('click', () => {
+      window.location.href = 'contact.html';
+    });
+
+  </script>
+
+</body>
+
+</html>
